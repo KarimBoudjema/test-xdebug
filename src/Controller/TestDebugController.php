@@ -46,7 +46,9 @@ class TestDebugController extends ControllerBase {
 
     $secondRandomNumber = $this->getRandomNumber(20);
 
-    $result = ($firstRandomNumber === $secondRandomNumber) ? "Wow, it matches!!!" : "OH no...";
+    $result = ($firstRandomNumber === $secondRandomNumber)
+      ? "Wow, it matches!!! $firstRandomNumber = $secondRandomNumber"
+      : "OH no... $firstRandomNumber <> $secondRandomNumber";
 
     $build['content'] = [
       '#type' => 'item',

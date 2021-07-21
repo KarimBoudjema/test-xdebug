@@ -6,6 +6,8 @@ test_debug.one:
     _controller: '\Drupal\test_debug\Controller\TestDebugController::one'
   requirements:
     _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
 
 # Exercise Two.
 test_debug.two:
@@ -15,3 +17,5 @@ test_debug.two:
     _controller: '\Drupal\test_debug\Controller\TestDebugController::two'
   requirements:
     _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
