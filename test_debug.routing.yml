@@ -1,0 +1,17 @@
+# Exercise one.
+test_debug.one:
+  path: '/test-debug/one'
+  defaults:
+    _title: 'Simple break point'
+    _controller: '\Drupal\test_debug\Controller\TestDebugController::one'
+  requirements:
+    _permission: 'access content'
+
+# Exercise Two.
+test_debug.two:
+  path: '/test-debug/two'
+  defaults:
+    _title: 'Step Over Vs. Step Into'
+    _controller: '\Drupal\test_debug\Controller\TestDebugController::two'
+  requirements:
+    _permission: 'access content'

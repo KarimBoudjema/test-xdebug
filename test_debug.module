@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Implements hook_entity_presave().
+ *
+ * Try to find the error in the if statement.
+ *
+ */
+function test_debug_entity_presave(\Drupal\Core\Entity\EntityInterface $entity) {
+
+  $x = 1;
+
+  if ($entity->id() == 'article') {
+    // Do something ...
+    $x = 3;
+  }
+
+  $x++;
+
+  return null;
+}
